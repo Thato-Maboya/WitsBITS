@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/index.css"/>
+        <link rel="stylesheet" href="css/animate.css"/>
+        <link rel="icon" href="images/icon.png"/>
+        <title>Wits Biomedical Informatics - Welcome</title>
+        <script type="text/javascript" src="js/Jquery.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <meta name="theme-color" content="#063C56"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    </head>
+    <body>
+
+    <div id="Background">
+        <div></div>
+    </div>
+
+    <div id="Content">
+        <div class="topBar"> 
+            <div class="container">
+                <img src="images/logo-horisontal.png" class="logo">
+                <div id="dropdown">
+                    <button id="mobileMenu">Menu</button>
+                    <ul id='menu'>
+                        <li class='current'>Home</li>
+                        <li onclick='document.location = "clinical.html" '>Clinical</li>
+                        <li onclick='document.location = "research.html" '>Research</li>
+                        <li onclick='document.location = "about.html" '>About</li>
+                        <li onclick='document.location = "Contact.html" '>Contact</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            
+            
+        <div class="w3-row-padding w3-margin-top">
+                            <div class="w3-third">
+                              <div class="w3-card w3-container" style="min-height:440px">
+                                        <div class="slider">
+                                                <p id="miniText">Welcome to the</p>
+                                                <h3 id="subMini">Wits Division of</h3>
+                                                <h1 id="boldTitle">Biomedical Informatics</h1>
+                                                <hr><br/>
+                                                <p id="mainText"><br/>
+                                                    A multifaceted team of doctors, scientists,<br/>
+                                                    developers and researchers dedicated to<br/>
+                                                    improving healthcare through technology and<br/>
+                                                    research.<br/>
+                                                </p>
+                                                
+                                        </div>
+                              </div>
+                            </div>
+
+                            <div class="w3-third">
+                                <a href="javascript:void(0)" onclick="document.getElementById('Clinical').style.display='block'">
+                                    <div class="w3-card w3-container" style="min-height:440px">
+                                              <div class="slider">
+                                                      <p id="miniText">Biomedical  Informatics</p>
+                                                      <h3 id="subMini">Clinical Informatics</h3>
+                                                      <h1 id="boldTitle">Electronic Discharge</h1>
+                                                      <hr><br/>
+                                                      <p id="mainText"><br/>
+                                                          The team  has development electronic<br/>
+                                                          health care systems for the Wits affiliated<br/>
+                                                          hospitals, Charlotte Maxeke, Helen Joseph<br/>
+                                                          and Baragwanath.<br/>
+                                                      </p><br/><br/>
+                                              </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="w3-third">
+                              <div class="w3-card w3-container" style="min-height:440px">
+                                  <a href="javascript:void(0)" onclick="document.getElementById('Research').style.display='block'">
+                                        <div class="slider">
+                                                <p id="miniText" style="color: white">Biomedical  Informatics</p>
+                                                <h3 id="subMini" style="color: white">Research Informatics</h3>
+                                                <h1 id="boldTitle" style="color: tomato">REDCap</h1>
+                                                <hr><br/>
+                                                <p id="mainText" style="color: white" ><br/>
+                                                    The faculty hosts a web-based research  data<br/>
+                                                    management tool called REDCap, which is quicker
+                                                    and more secure than paper-based or Excel
+                                                    capture sheet.<br/>
+                                                </p>    
+                                        </div>
+                                  </a>
+                              </div>
+                            </div>
+        </div>
+            <div class="slider">
+                <button onclick='document.location = "about.html" '>About us</button>
+                <button class="researchBtn" onclick='document.location = "research.html" '>Research</button>
+            </div>
+    </div>
+        
+    </div>
+        
+        <div class="wrapper">
+
+            <div id="Research" class="w3-modal">
+                <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+                    <div class=" w3-white ">
+                      <i onclick="document.getElementById('Research').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>  
+    
+                <p>Biomedical Informatics</p>
+                <h3>Research Informatics</h3>
+                <h1>REDCap</h1>
+                <hr>
+                <br><br>
+                
+                    The faculty hosts a web-based research data
+                    management tool called RedCap, which is quicker
+                    and more secure than paper-based or Excel
+                    capture sheet.
+
+                    REDCap was developed specifically for use 
+                    by clinicians and scientists, and has an intuitive
+                    interface that most find easy to adopt. We also
+                    provide training sessions, <br>one-on-one project
+                    design consultation and helpdesk support.
+
+                    The Wits REDCap platform was launched in
+                    August 2012, joining an international consortium 
+                    of  over 1700 organisations, and  we now have  over
+                    16000 user accounts , around 400 individual logins 
+                    per day and over 1100 projects.
+                <br/>
+                <br/>
+                <br/>
+
+                <h3>Why use RedCap?</h3>
+                <br>
+                        The following are some key reasons why researchers should utilize REDCap for their research studies:
+                        <ul>
+                        <li>Secure</li>
+                        Full user authentication (log-on/password), customizable user rights restictions, real-time data <br>validation, centralized & secure data storage,data de-identification options, and a full audit trails.
+                        
+                        <li>Web-based</li>
+                        Enter data or build your database from anywhere in the world over a secure web connection with <br>authentication and data logging.
+                        
+                        <li>Fast</li>
+                        Quick project start-up. Clinical report forms can be implemented without the need for a programmer. <br>Concept to production-level database is possible in less than one day.
+                        
+                        <li>Easy</li>
+                        Intuitive user interface and work flow, readily available online training materials make it easy to <br>get started.
+                        
+                        <li>Full customizable</li>
+                        You are in total control of shaping your database.
+                        
+                        <li>Autonomous utilization</li>
+                        Research groups have complete autonomy and control to add new users and set several levels of specific<br> user rights.
+                        
+                        <li>Data export</li>
+                        Seamless data downloads to common statistical packages (including SPSS, SAS, Stata, and R) and to the <br>.csv (comma separated values) format, the most common import and export format for spreadsheets <br>and databases.
+                        
+                        <li>Data import</li>
+                        Data import capability through Microsoft Excell Advanced features - File uploadng, auto-validation, <br>branching logic, calculated fields etc.
+                    </ul>
+
+                
+            </div>
+            
+            <p><a href="https://redcap.core.wits.ac.za/redcap/" target="_blank"><button>REDCap Login</button></a></p>
+                </div>
+            </div>
+            
+            <div id="Clinical" class="w3-modal">
+                <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+                    <div class=" w3-white ">
+                      <i onclick="document.getElementById('Clinical').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>  
+    
+                        <p>Biomedical Informatics</p>
+                        <h3>Clinical Informatics</h3>
+                        <h1>ED and DataDoc</h1>
+                        <hr>
+                        <p>
+                            The team  has development electronic 
+                            health care systems, (ED and DataDoc) for the Wits affiliated hospitals,
+                            Charlotte Maxate, Helen Joseph and Baragwanath.
+                        </p><br/><br/>
+
+
+                        <h3>Why use ED (Electronic Discharge)?</h3>
+                        <p>
+
+                            Benefits:
+                            <ul>
+                                <li>Reduce average length of stay as patients can get discharged faster</li>
+
+                                <li>Reduces litigation bills by eliminating TTO medication errors</li>
+
+                                <li>Get paid more for the care you have given with our accurate and automatic coding</li>
+
+                                <li>Saves bed time and money by option to offload pharmacy dispensing to community pharmacy</li>
+
+                                <li>Saves clinicians time by auto-filling in important data</li>
+
+                                <li>Doctors will be able to get patients discharged in minutes from any computer or tablet in the hospital</li>
+
+                                <li>Display the most relevant information for GPs and community carers with customisable specialty-specific templates</li>
+                            </ul>
+
+                            <a href="https://dischargedb.core.wits.ac.za/" target="_blank"><button>ED Login</button></a>
+                        </p>
+                        <br/><br/>
+
+                        <h3>Why use DataDoc?</h3>
+                        <p>
+                                The following are some key reasons why clinicians use DataDoc:
+                                <ul>
+
+                                    <li>Document Digitally</li>
+                                    Replace your out of date paper records with an easy-to-use digital system.
+
+                                    <li>Keep track of visit statistics</li>
+                                    Clinical reports and statistics can be generated to give you the answers you need.
+
+                                    <li>Patient Search</li>
+                                    Find the patient you're looking for using their name, contact information, file number, ICD10 codes and other case data.
+
+                                    <li>Easy and fast</li>
+                                    Easy-to-use data management tool for clinicians.
+
+                                    <li>Data import</li>
+                                    Everyday, a massive amount of digital data points are generated from countless personal medical devices, such as blood glucose monitors and insulin pumps.
+
+                                    <li>Data export</li>
+                                    Manages weekly and monthly reports and therefore you can download them.
+                                </ul>
+
+                                <a href="https://www.ebisu.co.za/" target="_blank"><button>DataDoc Login</button></a><br/><br/><br/><br/>
+                        </p>
+                    </div>
+            
+                </div>
+            </div>
+            
+            
+            <div id="Team" class="w3-modal">
+                <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+                    <div class=" w3-white ">
+                      <i onclick="document.getElementById('Team').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>  
+    
+                        <p id="miniText">Welcome to the</p>
+                        <h3 id="subMini">Wits Division of</h3>
+                        <h1 id="boldTitle">Biomedical Informatics</h1>
+                        <hr><br/>
+                        <p id="mainText"><br/>
+                            A multifaceted team of doctors, scientists,<br/>
+                            developers and researchers dedicated to<br/>
+                            improving healthcare through technology and<br/>
+                            research.<br/>
+                        </p><br/><br/>
+
+
+                        <h3>Why use ED (Electronic Discharge)?</h3>
+                        <p>
+
+                            Benefits:
+                            <ul>
+                                <li>Reduce average length of stay as patients can get discharged faster</li>
+
+                                <li>Reduces litigation bills by eliminating TTO medication errors</li>
+
+                                <li>Get paid more for the care you have given with our accurate and automatic coding</li>
+
+                                <li>Saves bed time and money by option to offload pharmacy dispensing to community pharmacy</li>
+
+                                <li>Saves clinicians time by auto-filling in important data</li>
+
+                                <li>Doctors will be able to get patients discharged in minutes from any computer or tablet in the hospital</li>
+
+                                <li>Display the most relevant information for GPs and community carers with customisable specialty-specific templates</li>
+                            </ul>
+
+                            <a href="https://dischargedb.core.wits.ac.za/" target="_blank"><button>ED Login</button></a>
+                        </p>
+                        <br/><br/>
+
+                        <h3>Why use DataDoc?</h3>
+                        <p>
+                                The following are some key reasons why clinicians use DataDoc:
+                                <ul>
+
+                                    <li>Document Digitally</li>
+                                    Replace your out of date paper records with an easy-to-use digital system.
+
+                                    <li>Keep track of visit statistics</li>
+                                    Clinical reports and statistics can be generated to give you the answers you need.
+
+                                    <li>Patient Search</li>
+                                    Find the patient you're looking for using their name, contact information, file number, ICD10 codes and other case data.
+
+                                    <li>Easy and fast</li>
+                                    Easy-to-use data management tool for clinicians.
+
+                                    <li>Data import</li>
+                                    Everyday, a massive amount of digital data points are generated from countless personal medical devices, such as blood glucose monitors and insulin pumps.
+
+                                    <li>Data export</li>
+                                    Manages weekly and monthly reports and therefore you can download them.
+                                </ul>
+
+                                <a href="https://www.ebisu.co.za/" target="_blank"><button>DataDoc Login</button></a><br/><br/><br/><br/>
+                        </p>
+                    </div>
+            
+                </div>
+            </div>
+            
+        </div>
+        
+    </body>
+</html>
