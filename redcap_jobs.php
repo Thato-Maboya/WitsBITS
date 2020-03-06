@@ -49,6 +49,25 @@
                         <li class="list-group-item">Temporary</li>
                         <li class="list-group-item">Part-time</li>
                         <li class="list-group-item">Permanent</li>
+						<li class="list-group-item">
+						
+								<select id="Areas_of_Expertise_filter">							  
+									<option value="Data_Capturer"> Data Capturer</option>
+									<option value="Researcher"> Researcher</option>
+									<option value="Clinician">Clinician</option>
+									<option value="Data_Analyst">Data Analyst</option>
+									 <option value="Database_manager">Database manager</option>
+									<option value="Administrator">Administrator</option>
+									<option value="Undergrad_Student">Undergrad Student</option>
+									 <option value="Postgrad_Student">Postgrad Student</option>
+									<option value="Quality_Assurance"> Quality Assurance</option>
+									 <option value="Database_Design">Database Design</option>
+									 <option value="Clinical_Trial">Clinical Trial</option>
+									 <option value="Research_Co-ordinator">Research Co-ordinator</option>
+									 <option value="Programmer_Developer">Programmer/Developer</option>
+								</select>
+						
+						</li>
                     </ul>
                 </div>
             </div>
