@@ -50,52 +50,56 @@
                         <li class="list-group-item">Part-time</li>
                         <li class="list-group-item">Permanent</li>
                     </ul>
+					
+					 <h5 class="h5_left">Areas of Expertise:</h5>
+					 <div class="areas_of_axpertise_filter">
 										<div class="checkbox">
-										  <label><input type="checkbox" value="">Data Capturer</label>
+										  <label><input style="margin-right: 8px" type="checkbox" value="">Data Capturer</label>
 										</div>
 										<div class="checkbox">
-										  <label><input type="checkbox" value="">Researcher</label>
+										  <label><input style="margin-right: 8px" type="checkbox" value="">Researcher</label>
 										</div>
 										<div class="checkbox">
-										  <label><input type="checkbox" value="">Clinician</label>
+										  <label><input style="margin-right: 8px" type="checkbox" value="">Clinician</label>
 										</div> 
 										
 										<div class="checkbox">
-										  <label><input type="checkbox" value="">Data Analyst</label>
+										  <label><input style="margin-right: 8px" type="checkbox" value="">Data Analyst</label>
 										</div>
 										<div class="checkbox">
-										  <label><input type="checkbox" value="">Database manager</label>
+										  <label><input style="margin-right: 8px" type="checkbox" value="">Database manager</label>
 										</div>
 										<div class="checkbox">
-										  <label><input type="checkbox" value="">Administrator</label>
+										  <label><input style="margin-right: 8px" type="checkbox" value="">Administrator</label>
 										</div> 
 										
 										<div class="checkbox">
-										  <label><input type="checkbox" value="">Undergrad Student</label>
+										  <label><input style="margin-right: 8px" type="checkbox" value="">Undergrad Student</label>
 										</div>
 										<div class="checkbox">
-										  <label><input type="checkbox" value="">Postgrad Student</label>
+										  <label><input style="margin-right: 8px" type="checkbox" value="">Postgrad Student</label>
 										</div>
 										<div class="checkbox">
-										  <label><input type="checkbox" value="" >Quality Assurance</label>
+										  <label><input style="margin-right: 8px" type="checkbox" value="" >Quality Assurance</label>
 										</div> 
 										<div class="checkbox"> 
-										<label><input type="checkbox" value="">Database Design</label>
+										<label><input style="margin-right: 8px" type="checkbox" value="">Database Design</label>
 										</div> 
 										<div class="checkbox">
-										  <label><input type="checkbox" value="">Clinical Trial</label>
+										  <label><input style="margin-right: 8px" type="checkbox" value="">Clinical Trial</label>
 										</div>
 										<div class="checkbox">
-										  <label><input type="checkbox" value="">Research Co-ordinator</label>
+										  <label><input style="margin-right: 8px" type="checkbox" value="">Research Co-ordinator</label>
 										</div>
 										<div class="checkbox">
-										  <label><input type="checkbox" value="">Programmer/Developer</label>
+										  <label><input style="margin-right: 8px"type="checkbox" value="">Programmer/Developer</label>
 										</div> 
-										
+									
 						<h1 class="btn btn-primary">Apply Filters</h1>
+				</div>
                 </div>
             </div>
-            <div class="col-sm row2">
+            <div class="col-sm-7 row2">
             
             <?php
                 $data = array(
