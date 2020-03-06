@@ -33,22 +33,24 @@
     <div class="container">
         <div class="row">
             <div class="col-sm row1">
-                <h5 class="h5_left">Sort by:</h5>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Date (ASC)</li>
-                    <li class="list-group-item">Date (DESC)</li>
-                </ul>
+                <div id="leftSec">
+                    <h5 class="h5_left">Sort by:</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Date (ASC)</li>
+                        <li class="list-group-item">Date (DESC)</li>
+                    </ul>
 
-                <br/>
-                <br/>
-                <h5 class="h5_left">Job Type:</h5>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Full time</li>
-                    <li class="list-group-item">Contract</li>
-                    <li class="list-group-item">Temporary</li>
-                    <li class="list-group-item">Part-time</li>
-                    <li class="list-group-item">Permanent</li>
-                </ul>
+                    <br/>
+                    <br/>
+                    <h5 class="h5_left">Job Type:</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Full time</li>
+                        <li class="list-group-item">Contract</li>
+                        <li class="list-group-item">Temporary</li>
+                        <li class="list-group-item">Part-time</li>
+                        <li class="list-group-item">Permanent</li>
+                    </ul>
+                </div>
             </div>
             <div class="col-sm row2">
             
@@ -85,10 +87,10 @@
                     $post_str = '
                     <br/>
                     <div class="card">
-                            <h5 class="card-header">'.$red_cap_job_list[$x]["job_title"].'</h5>
+                            <h5 class="card-header">'.$red_cap_job_list[$x]["previous_current_position"].'</h5>
                             <div class="card-body">
-                            <h5 class="card-title">'.$red_cap_job_list[$x]["description"].'</h5>
-                            <p class="card-text">'.$red_cap_job_list[$x]["user_overview"].'</p>
+                            <h5 class="card-title">'.$red_cap_job_list[$x]["initials_published_on_webs"].'</h5>
+                            <p class="card-text">'.$red_cap_job_list[$x]["brief_summary"].'</p>
                             <a href="mailto:'.$red_cap_job_list[$x]["email"].'" class="btn btn-primary">contact</a>
                             </div>
                             <div class="card-footer text-muted">
