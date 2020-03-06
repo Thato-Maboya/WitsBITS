@@ -79,10 +79,9 @@
 										<div class="checkbox">
 										  <label><input type="checkbox" value="" >Quality Assurance</label>
 										</div> 
-										<div> 
+										<div class="checkbox"> 
 										<label><input type="checkbox" value="">Database Design</label>
 										</div> 
-										
 										<div class="checkbox">
 										  <label><input type="checkbox" value="">Clinical Trial</label>
 										</div>
@@ -92,6 +91,8 @@
 										<div class="checkbox">
 										  <label><input type="checkbox" value="">Programmer/Developer</label>
 										</div> 
+										
+						<h1 class="btn btn-primary">Apply Filters</h1>
                 </div>
             </div>
             <div class="col-sm row2">
