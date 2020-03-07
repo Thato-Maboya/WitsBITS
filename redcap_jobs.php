@@ -128,7 +128,7 @@
                 curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($data, '', '&'));
                 $output = curl_exec($ch);
                 // print $output;
-                $red_cap_job_list = json_decode($output, true);
+                $red_cap_job_list = array_reverse(json_decode($output, true));
                 for ($x = 0; $x <= count($red_cap_job_list)-1; $x++) {
 
                     $post_str = '
