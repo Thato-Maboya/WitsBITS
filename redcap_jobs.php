@@ -47,11 +47,13 @@
                     <br/>
                     <h5 class="h5_left">Job Type:</h5>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Full time</li>
-                        <li class="list-group-item">Contract</li>
-                        <li class="list-group-item">Temporary</li>
-                        <li class="list-group-item">Part-time</li>
-                        <li class="list-group-item">Permanent</li>
+                        <li class="list-group-item" onclick="filter('all')">All</li>
+                        <li class="list-group-item" onclick="filter('Student')">Students</li>
+                        <li class="list-group-item" onclick="filter('Quality-Assurance')">Quality-Assurance</li>
+                        <li class="list-group-item" onclick="filter('Database Designer')">Database Designer</li>
+                        <!-- <li class="list-group-item" onclick="filter('Part-time')">Part-time</li> -->
+                        <li class="list-group-item" onclick="filter('Python Developer')">Python Developer</li>
+                        <!-- <li class="list-group-item" onclick="filter('Permanent')">Permanent</li> -->
                     </ul>
 					
 					 <h5 class="h5_left">Areas of Expertise:</h5>
@@ -105,6 +107,15 @@
             <div class="col-sm-7 row2">
             
             <?php
+
+                $_filter;
+                if(isset($_GET["filter"])){
+                  $_filter = '[previous_current_position] = "'.$_GET["filter"].'"';
+                  // echo $_filter;
+                }
+                else{
+                  $_filter = '';
+                }
                 $data = array(
                     'token' => '60A3D69D389B0F9BAD605C48AA200417',
                     'content' => 'record',
@@ -116,7 +127,8 @@
                     'exportCheckboxLabel' => 'false',
                     'exportSurveyFields' => 'false',
                     'exportDataAccessGroups' => 'false',
-                    'returnFormat' => 'json'
+                    'returnFormat' => 'json',
+                    'filterLogic' => $_filter,
                 );
                 $ch = curl_init();
                 curl_setopt($ch, CURLOPT_URL, 'https://redcap.core.wits.ac.za/redcap/api/');
@@ -136,29 +148,14 @@
                 $red_cap_job_list = array_reverse(json_decode($output, true));
 
 
-                applyFilter($no_fitlers, $red_cap_job_list);
+                printJobSeekers($red_cap_job_list);
 				
 				
                 curl_close($ch);
+              
             ?>
 
 <?php
-
-
-function applyFilter($no_fitlers, $red_cap_job_list){
-
-  if ($no_fitlers){
-    printJobSeekers($red_cap_job_list);
-  }else{
-    printJobSeekers($red_cap_job_list);
-  }
-
-}
-
-
-
-
-
 
 function printJobSeekers($listofJobSeeker){
   for ($x = 0; $x <= count($listofJobSeeker)-1; $x++) {
@@ -206,5 +203,15 @@ function printJobSeekers($listofJobSeeker){
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<script>
+  function filter(filter){
+    if(filter != "all"){
+      document.location = "./redcap_jobs.php?filter="+filter+"";
+    }else{
+      document.location = "./redcap_jobs.php";
+    }
+  }
+</script>
 </body>
 </html>
