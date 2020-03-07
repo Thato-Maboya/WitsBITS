@@ -128,16 +128,9 @@
                 curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($data, '', '&'));
                 $output = curl_exec($ch);
                 // print $output;
-<<<<<<< HEAD
-                $red_cap_job_list = json_decode($output, true);
-				
-				
+                $red_cap_job_list = array_reverse(json_decode($output, true));
 				function printJobSeekers($listofJobSeeker){
                 for ($x = 0; $x <= count($listofJobSeeker)-1; $x++) {
-=======
-                $red_cap_job_list = array_reverse(json_decode($output, true));
-                for ($x = 0; $x <= count($red_cap_job_list)-1; $x++) {
->>>>>>> 6a06dcbe4eb59d96b9daa1ba895ff305d720e931
 
                     $post_str = '
                     <br/>
