@@ -129,27 +129,33 @@
                 $output = curl_exec($ch);
                 // print $output;
                 $red_cap_job_list = json_decode($output, true);
-                for ($x = 0; $x <= count($red_cap_job_list)-1; $x++) {
+				
+				
+				function printJobSeekers($listofJobSeeker){
+                for ($x = 0; $x <= count($listofJobSeeker)-1; $x++) {
 
                     $post_str = '
                     <br/>
                     <div class="card">
-                            <h5 class="card-header">'.$red_cap_job_list[$x]["previous_current_position"].'</h5>
+                            <h5 class="card-header">'.$listofJobSeeker[$x]["previous_current_position"].'</h5>
                             <div class="card-body">
-                            <h5 class="card-title">'.$red_cap_job_list[$x]["initials_published_on_webs"].'</h5>
-                            <p class="card-text">'.$red_cap_job_list[$x]["brief_summary"].'</p>
-                            <a href="mailto:'.$red_cap_job_list[$x]["email"].'" class="btn btn-primary">contact</a>
+                            <h5 class="card-title">'.$listofJobSeeker[$x]["initials_published_on_webs"].'</h5>
+                            <p class="card-text">'.$listofJobSeeker[$x]["brief_summary"].'</p>
+                            <a href="mailto:'.$listofJobSeeker[$x]["email"].'" class="btn btn-primary">contact</a>
                             </div>
                             <div class="card-footer text-muted">
-                            '.$red_cap_job_list[$x]["last_name"].',
-                            '.$red_cap_job_list[$x]["date"].'
+                            '.$listofJobSeeker[$x]["last_name"].',
+                            '.$listofJobSeeker[$x]["date"].'
                             </div>
                     </div>
                     ';
                     echo $post_str;
-                    // print json_encode($red_cap_job_list[$x]["email"]);
+                    // print json_encode($listofJobSeeker[$x]["email"]);
                 }
-
+				}
+				
+				printJobSeekers($red_cap_job_list);
+				
                 curl_close($ch);
             ?>
 
