@@ -71,10 +71,23 @@ h3 {
   -webkit-box-shadow: $dropShadow;
 }
 
+
+.card{
+  border: 0px !important;
+}
+
 .logo {
   height: 70px;
-  margin-top: 10px;
   float: left;
+  margin-left:30px;
+}
+
+ul.navbar-nav {
+  margin-top: 20px;
+}
+
+button.btn.btn-outline-success.workshopBtn {
+  width: 200px;
 }
 
 .wrapper {
@@ -298,14 +311,37 @@ button {
   }
 }
 
+
+.w3-modal{
+  z-index: 9999 !important;
+}
+
+/*navigation*/
+nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+  height: 80px;
+}
+
+
+.w3-third.card {
+  padding: 0px !important;
+}
+
+div#navbarNavDropdown {
+  background: #f8f9fa;
+  z-index: 99;
+}
+
 /*# sourceMappingURL=index.css.map */
 
 @media screen and (max-width:1200px) {
   .logo {
     margin-top: 0px;
     height: 62px;
-    background: white;
-    padding: 14px;
+  }
+
+  .form-inline {
+    background: #f8f9fa;
+    z-index: 99;
   }
 
   .wrapper {
@@ -342,10 +378,16 @@ button {
     color: white;
   }
 
-  .slider p,
-  .slider h3 {
-    color: white;
-  }
+  // .slider p,
+  // .slider h3 {
+  //   // color: white;
+  // }
+
+
+
+.navRedCapBtn{
+  width: 150px;
+}
 
   .slider p{
     font-size: 13px;
