@@ -6,7 +6,7 @@ $screenSmall: 1200px;
 $dropShadow:-5px -4px 5px #00000045,
 0 1px 5px #00000038;
 
-body{
+body {
   background-color: #f8f9fa !important;
 }
 
@@ -30,7 +30,7 @@ body{
   src: url(../fonts/HelveticaBold.ttf);
 }
 
-.sliderTitle{
+.sliderTitle {
   font-family: "Main";
   float: left;
 }
@@ -42,7 +42,7 @@ body {
   font-family: "Main";
 }
 
-.normalText{
+.normalText {
   font-family: "Main";
   color: black;
 }
@@ -61,7 +61,7 @@ body {
 }
 
 
-#sliderText{
+#sliderText {
   text-align: left;
   line-height: 33px;
   margin-top: 15%;
@@ -79,7 +79,7 @@ h3 {
   font-size: 27px;
 }
 
-.col-sm-8 h1{
+.col-sm-8 h1 {
   text-align: left;
 }
 
@@ -127,12 +127,13 @@ div#carouselExampleControls {
   background: #f8f9fa;
 }
 
-.carousel-control-next-icon, .carousel-control-prev-icon{
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
   width: unset;
   height: unset;
 }
-.carousel-control-next-icon:before
-{
+
+.carousel-control-next-icon:before {
   content: '▶';
   font-size: 55px;
   color: black;
@@ -144,29 +145,29 @@ div#carouselExampleControls {
   color: black;
 }
 
-.card{
+.card {
   border: 0px !important;
 }
 
 
-i{
+i {
   color: black;
   font-size: 20px;
 }
 
 
-.aboutHeading{
+.aboutHeading {
   width: 100%;
 }
 
-#space{
+#space {
   margin-top: 30%;
 }
 
 .logo {
   height: 70px;
   float: left;
-  margin-left:30px;
+  margin-left: 30px;
 }
 
 ul.navbar-nav {
@@ -351,7 +352,8 @@ button {
   display: none;
 }
 
-#Research,#Clinical {
+#Research,
+#Clinical {
   text-align: left;
   margin-left: 15px;
 
@@ -387,17 +389,17 @@ button {
     line-height: 27px;
     width: 85%;
     text-align: justify;
-    font-family:"Main";
+    font-family: "Main";
     // color: #5C737F;
 
-    li{
+    li {
       margin-top: 20px;
     }
   }
 }
 
 
-.w3-modal{
+.w3-modal {
   z-index: 9999 !important;
 }
 
@@ -435,7 +437,8 @@ div#navbarNavDropdown {
 
   #Research {
 
-    p, ul {
+    p,
+    ul {
       width: 85%;
     }
   }
@@ -470,11 +473,11 @@ div#navbarNavDropdown {
 
 
 
-.navRedCapBtn{
-  width: 150px;
-}
+  .navRedCapBtn {
+    width: 150px;
+  }
 
-  .slider p{
+  .slider p {
     font-size: 13px;
   }
 
@@ -553,13 +556,13 @@ div#navbarNavDropdown {
 }
 
 
-@media (max-width:800px){
+@media (max-width:800px) {
   .col-sm-8 h1 {
     font-size: 23px;
     line-height: 49px;
   }
 
-  #Content{
+  #Content {
     position: unset;
   }
 }

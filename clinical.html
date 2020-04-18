@@ -1,30 +1,43 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="css/index.css"/>
-        <link rel="stylesheet" href="css/animate.css"/>
-        <link rel="icon" href="images/icon.png"/>
-        <title>WitsBits - Clinical Informatics</title>
-        <script type="text/javascript" src="js/Jquery.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <meta name="theme-color" content="#063C56"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--bootstrap-->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151911858-1"></script>
-        <script>
+
+<head>
+    <meta name=" theme-color" content="#f8f9fa">
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="icon" href="images/icon.png" />
+    <title>WitsBits - Clinical Informatics</title>
+    <script type="text/javascript" src="js/Jquery.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <meta name="theme-color" content="#063C56" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151911858-1"></script>
+    <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'UA-151911858-1');
-        </script>
-    </head>
-    <body>
+    </script>
+</head>
+
+<body>
 
 
     <div id="Content">
@@ -35,34 +48,36 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <!-- <a class="navbar-brand" href="#">Navbar</a> -->
             <a href="index.html"><img src="images/logo-stacked.png" alt="WitsBITS Stacked logo" class="logo"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Contact.html">Contact</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Research
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="clinical.html">Clinical Research</a>
-                    <a class="dropdown-item" href="research.html">Research Informatics</a>
-                    <!-- <a class="dropdown-item" href="#">Something else here</a> -->
-                  </div>
-                </li>
-              </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Research
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="clinical.html">Clinical Research</a>
+                            <a class="dropdown-item" href="research.html">Research Informatics</a>
+                            <!-- <a class="dropdown-item" href="#">Something else here</a> -->
+                        </div>
+                    </li>
+                </ul>
             </div>
-          </nav>
- 
+        </nav>
+
 
 
         <div class="wrapper">
@@ -73,10 +88,10 @@
                 <h1>ED and DataDoc</h1>
                 <hr>
                 <p>
-                    The team  has development electronic 
+                    The team has development electronic
                     health care systems, (ED and DataDoc) for the Wits affiliated hospitals,
                     Charlotte Maxate, Helen Joseph and Baragwanath.
-                </p><br/><br/>
+                </p><br /><br />
 
 
                 <h3>Why use ED (Electronic Discharge)?</h3>
@@ -85,58 +100,65 @@
                     Benefits:
                     <ul>
                         <li>Reduce average length of stay as patients can get discharged faster</li>
-                            
+
                         <li>Reduces litigation bills by eliminating TTO medication errors</li>
-                            
+
                         <li>Get paid more for the care you have given with our accurate and automatic coding</li>
-                            
+
                         <li>Saves bed time and money by option to offload pharmacy dispensing to community pharmacy</li>
-                            
+
                         <li>Saves clinicians time by auto-filling in important data</li>
-                            
-                        <li>Doctors will be able to get patients discharged in minutes from any computer or tablet in the hospital</li>
-                            
-                        <li>Display the most relevant information for GPs and community carers with customisable specialty-specific templates</li>
+
+                        <li>Doctors will be able to get patients discharged in minutes from any computer or tablet in
+                            the hospital</li>
+
+                        <li>Display the most relevant information for GPs and community carers with customisable
+                            specialty-specific templates</li>
                     </ul>
 
                     <br>
-                    <a href="https://dischargedb.core.wits.ac.za/" target="_blank"><button class="btn btn-primary">ED Login</button></a>
+                    <a href="https://dischargedb.core.wits.ac.za/" target="_blank"><button class="btn btn-primary">ED
+                            Login</button></a>
                 </p>
-                <br/><br/>
+                <br /><br />
 
                 <h3>Why use DataDoc?</h3>
                 <p>
-                        The following are some key reasons why clinicians use DataDoc:
-                        <ul>
-                            
-                            <li>Document Digitally</li>
-                            Replace your out of date paper records with an easy-to-use digital system.
-                            
-                            <li>Keep track of visit statistics</li>
-                            Clinical reports and statistics can be generated to give you the answers you need.
-                            
-                            <li>Patient Search</li>
-                            Find the patient you're looking for using their name, contact information, file number, ICD10 codes and other case data.
-                            
-                            <li>Easy and fast</li>
-                            Easy-to-use data management tool for clinicians.
-                            
-                            <li>Data import</li>
-                            Everyday, a massive amount of digital data points are generated from countless personal medical devices, such as blood glucose monitors and insulin pumps.
-                            
-                            <li>Data export</li>
-                            Manages weekly and monthly reports and therefore you can download them.
-                        </ul>
+                    The following are some key reasons why clinicians use DataDoc:
+                    <ul>
 
-                        <br/>
-                        <a href="https://www.ebisu.co.za/" target="_blank"><button class="btn btn-primary">DataDoc website</button></a><br/><br/><br/><br/>
+                        <li>Document Digitally</li>
+                        Replace your out of date paper records with an easy-to-use digital system.
+
+                        <li>Keep track of visit statistics</li>
+                        Clinical reports and statistics can be generated to give you the answers you need.
+
+                        <li>Patient Search</li>
+                        Find the patient you're looking for using their name, contact information, file number, ICD10
+                        codes and other case data.
+
+                        <li>Easy and fast</li>
+                        Easy-to-use data management tool for clinicians.
+
+                        <li>Data import</li>
+                        Everyday, a massive amount of digital data points are generated from countless personal medical
+                        devices, such as blood glucose monitors and insulin pumps.
+
+                        <li>Data export</li>
+                        Manages weekly and monthly reports and therefore you can download them.
+                    </ul>
+
+                    <br />
+                    <a href="https://www.ebisu.co.za/" target="_blank"><button class="btn btn-primary">DataDoc
+                            website</button></a><br /><br /><br /><br />
                 </p>
             </div>
-            
 
-            
+
+
         </div>
     </div>
-        
-    </body>
+
+</body>
+
 </html>
