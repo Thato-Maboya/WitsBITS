@@ -42,6 +42,10 @@ body {
   font-family: "Main";
 }
 
+.normalText{
+  font-family: "Main";
+  color: black;
+}
 
 .col-sm-8 h1 {
   text-align: left;
@@ -150,6 +154,11 @@ i{
   font-size: 20px;
 }
 
+
+.aboutHeading{
+  width: 100%;
+}
+
 #space{
   margin-top: 30%;
 }
@@ -210,10 +219,6 @@ button.btn.btn-outline-success.workshopBtn {
     text-align: left;
   }
 
-  p,
-  h3 {
-    color: $grey;
-  }
 
   p {
     line-height: 27px;
@@ -346,27 +351,28 @@ button {
   display: none;
 }
 
-#Research {
+#Research,#Clinical {
   text-align: left;
   margin-left: 15px;
 
   h3 {
-    color: $grey;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   h1 {
     margin-top: 0px;
+    font-family: "Main";
   }
 
   p {
     margin-bottom: 0px;
     margin-top: 40px;
-    color: $grey;
-    width: 1000px;
+    // color: $grey;
+    width: 85%;
     line-height: 31px;
     text-align: justify;
+    font-family: "Main";
   }
 
   // hr {
@@ -379,9 +385,10 @@ button {
 
   ul {
     line-height: 27px;
-    width: 1000px;
+    width: 85%;
     text-align: justify;
-    color: #5C737F;
+    font-family:"Main";
+    // color: #5C737F;
 
     li{
       margin-top: 20px;
