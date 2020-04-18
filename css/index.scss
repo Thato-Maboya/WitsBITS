@@ -6,6 +6,9 @@ $screenSmall: 1200px;
 $dropShadow:-5px -4px 5px #00000045,
 0 1px 5px #00000038;
 
+body{
+  background-color: #f8f9fa !important;
+}
 
 @font-face {
   font-family: "Main";
@@ -17,12 +20,48 @@ $dropShadow:-5px -4px 5px #00000045,
   src: url(./Roboto-Medium.ttf);
 }
 
+@font-face {
+  font-family: "HMed";
+  src: url(../fonts/HelveticaMedium.ttf);
+}
+
+@font-face {
+  font-family: "HBold";
+  src: url(../fonts/HelveticaBold.ttf);
+}
+
+.sliderTitle{
+  font-family: "Main";
+  float: left;
+}
 
 body {
   width: 100%;
   padding: 0px;
   margin: 0px;
   font-family: "Main";
+}
+
+
+.col-sm-8 h1 {
+  text-align: left;
+  margin-top: 5%;
+  line-height: 80px;
+  font-size: 50px;
+}
+
+.carousel-inner {
+  position: fixed;
+  width: 100%;
+  overflow: scroll;
+}
+
+
+#sliderText{
+  text-align: left;
+  line-height: 33px;
+  margin-top: 15%;
+  color: gray;
 }
 
 h1,
@@ -34,6 +73,10 @@ h3 {
 
 h3 {
   font-size: 27px;
+}
+
+.col-sm-8 h1{
+  text-align: left;
 }
 
 #Background {
@@ -62,6 +105,7 @@ h3 {
   position: absolute;
   text-align: -webkit-center;
   text-align: -moz-center;
+  background: #f8f9fa;
 }
 
 .topBar {
@@ -72,8 +116,42 @@ h3 {
 }
 
 
+
+div#carouselExampleControls {
+  width: 100%;
+  height: 100%;
+  background: #f8f9fa;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+  width: unset;
+  height: unset;
+}
+.carousel-control-next-icon:before
+{
+  content: '▶';
+  font-size: 55px;
+  color: black;
+}
+
+.carousel-control-prev-icon:before {
+  content: '←';
+  font-size: 55px;
+  color: black;
+}
+
 .card{
   border: 0px !important;
+}
+
+
+i{
+  color: black;
+  font-size: 20px;
+}
+
+#space{
+  margin-top: 30%;
 }
 
 .logo {
@@ -291,13 +369,13 @@ button {
     text-align: justify;
   }
 
-  hr {
-    width: 100px;
-    height: 2px;
-    background: $green;
-    border: 0px;
-    float: left;
-  }
+  // hr {
+  //   width: 100px;
+  //   height: 2px;
+  //   background: $green;
+  //   border: 0px;
+  //   float: left;
+  // }
 
   ul {
     line-height: 27px;
@@ -465,4 +543,16 @@ div#navbarNavDropdown {
     }
   }
 
+}
+
+
+@media (max-width:800px){
+  .col-sm-8 h1 {
+    font-size: 23px;
+    line-height: 49px;
+  }
+
+  #Content{
+    position: unset;
+  }
 }
