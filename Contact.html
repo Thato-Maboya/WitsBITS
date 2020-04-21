@@ -11,7 +11,8 @@
     <script type="text/javascript" src="js/index.js"></script>
     <meta name="theme-color" content="#063C56" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/b84905de1c.js" crossorigin="anonymous"></script>
     <!--bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -42,10 +43,6 @@
 </head>
 
 <body>
-
-    <div id="Background">
-        <div class='blueMenu'></div>
-    </div>
 
     <div id="Content">
 
@@ -99,9 +96,36 @@
             </div>
         </div>-->
 
-        <div class="wrapper">
+        <div class="wrapper" style="text-align: left;">
+            <br/>
+            <h1 class="sliderTitle aboutHeading">Contact WitsBits</h1>
+            <p id="contactMesg">Need to get in touch with us? We're all ears.</p>
 
-            <div id='contactBlock'>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><i class="fas fa-map-marked-alt"></i> 31 Princess of Wales Terrance, Parktown, Johannesburg, 2193 View map</li>
+                <li class="list-group-item"><i class="far fa-clock"></i> Mon - Fri: 8:00am - 4:30pm</li>
+                <li class="list-group-item"><i class="fas fa-phone-volume"></i> (011) 717 6634</li>
+              </ul>
+
+              <br/>
+            <form action="https://formspree.io/informatics.health@wits.ac.za" method="POST">
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Email address</label>
+                  <input type="email" name="email"  class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1">Full name</label>
+                  <input type="text"  name="fullName" class="form-control" id="exampleFormControlInput1" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Message</label>
+                  <textarea class="form-control" name="message"  id="exampleFormControlTextarea1" rows="3" required></textarea>
+                </div>
+                <button class="btn btn-primary">Send</button>
+              </form>
+              <br/>
+              <br/>
+            <!-- <div id='contactBlock'>
                 <form action="https://formspree.io/informatics.health@wits.ac.za" method="POST">
                     <a name="contact">
                         <p>Contact</p>
@@ -111,37 +135,7 @@
                     <textarea name="message" placeholder="Message" required></textarea><br />
                     <button type="submit">Submit</button>
                 </form>
-
-                <div>
-                    <h3>
-                        Address:
-                    </h3>
-                    <p>
-                        31Princess of Wales Terrance,<br />
-                        Parktown, Johannesburg, 2193<br />
-                        <a href="https://www.google.com/maps/place/Wits+Health+Consortium/@-26.1778952,28.0445513,17z/data=!3m1!4b1!4m5!3m4!1s0x1e950c1445953dd5:0x138455a3d18f93ea!8m2!3d-26.1779!4d28.04674"
-                            style="color: white;" target="_blank">View map</a>
-                    </p>
-
-                    <h3>
-                        Hours:
-                    </h3>
-                    <p>
-                        Mon - Fri: 8:00am - 4:30pm<br />
-                        Sat & Sun: Closed
-                    </p>
-
-                    <h3>
-                        Contact:
-                    </h3>
-                    <p>
-                        (011) 717 6634
-                    </p>
-
-                </div>
-            </div>
-
-
+            </div> -->
 
         </div>
     </div>
